@@ -5,13 +5,13 @@ import smtplib
 
 
 class Currency:
-	# Лінк на на потрібну сторінку страницу
+	# Лінк на на потрібну сторінку
 	DOLLAR_UAH = 'https://www.google.com/search?q=usd+to+uah&oq=usd+to&aqs=edge.0.0i433i512l3j69i57j0i512l5.8065j0j9&sourceid=chrome&ie=UTF-8'
 	# Заголовки для передачі разом з URL
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.47'}
 
 	current_converted_price = 0
-	difference = 1 # Різниця після якої будет відправлено повідомлення на пошту
+	difference = 1 # Різниця після якої буде відправлено повідомлення на пошту
 
 	def __init__(self):
 		# Встановлення курсу валюти при створенні об'єкта
